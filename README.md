@@ -2,13 +2,14 @@
 
 > **Read-only archive of released versions of ramon/guest-cta.** Not for installation: use [Packagist](https://packagist.org/packages/ramon/guest-cta) or the [upstream repository](https://github.com/ram0ng1/guest-cta).
 
-**0** versions archived · Latest: [`2.0.1`](https://github.com/flarchive/ramon-guest-cta/tree/archive/v2.0.1) · License: `MIT` · Flarum: `^2.0.0`
+**2** versions archived · Latest: [`2.0.1`](https://github.com/flarchive/ramon-guest-cta/tree/archive/v2.0.1) · License: `MIT` · Flarum: `^2.0.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `2.0.0` | 2026-05-09 | `^2.0.0` | [Browse](https://github.com/flarchive/ramon-guest-cta/tree/archive/v2.0.0) |
+| `2.0.1` | 2026-05-09 | `^2.0.0` | [Browse](https://github.com/flarchive/ramon-guest-cta/tree/archive/v2.0.1) |
 
 Catalog entry: [packages/ramon-guest-cta.json](https://github.com/flarchive/archive-index/blob/main/packages/ramon-guest-cta.json)
 
