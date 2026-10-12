@@ -1,0 +1,63 @@
+{
+    "name": "ramon/guest-cta",
+    "description": "Hide links from guests and show a Login/Sign Up CTA between posts in discussions.",
+    "keywords": [
+        "flarum",
+        "extension",
+        "guest",
+        "cta",
+        "signup",
+        "login"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ramon Guilherme",
+            "email": "ramon@ramonguilherme.com.br",
+            "homepage": "https://ramonguilherme.com.br",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ram0ng1/guest-cta/issues",
+        "source": "https://github.com/ram0ng1/guest-cta"
+    },
+    "require": {
+        "flarum/core": "^2.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5 || ^13.2.0",
+        "phpstan/phpstan": "^2.2",
+        "roave/security-advisories": "dev-latest"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-security": "phpunit --group security",
+        "analyse": "phpstan analyse"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ramon\\GuestCta\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ramon\\GuestCta\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        },
+        "flarum-extension": {
+            "title": "Guest CTA",
+            "category": "feature",
+            "icon": {
+                "image": "icon.svg"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
