@@ -1,0 +1,26 @@
+{
+    "private": true,
+    "name": "@ramon/guest-cta",
+    "version": "1.0.0",
+    "prettier": "@flarum/prettier-config",
+    "scripts": {
+        "dev": "webpack --mode development --watch",
+        "lint": "eslint \"src/**/*.{ts,tsx}\"",
+        "build": "npm run lint && webpack --mode production",
+        "format": "prettier --write src",
+        "format-check": "prettier --check src",
+        "check-typings": "tsc --noEmit --emitDeclarationOnly false"
+    },
+    "devDependencies": {
+        "@flarum/prettier-config": "^1.0.0",
+        "@typescript-eslint/parser": "^8.58.1",
+        "eslint": "^9.39.4",
+        "eslint-plugin-react": "^7.37.5",
+        "flarum-tsconfig": "^2.0.0",
+        "flarum-webpack-config": "^3.0.6",
+        "prettier": "^3.4.2",
+        "typescript": "^6.0.3",
+        "webpack": "^5.111.1",
+        "webpack-cli": "^4.9.1"
+    }
+}

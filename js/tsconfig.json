@@ -1,0 +1,26 @@
+{
+    // Use Flarum's tsconfig as a starting point
+    "extends": "flarum-tsconfig",
+    // Core's typings are read from this extension's own vendor/ (CI, standalone
+    // checkout) or, failing that, from the Flarum install it is symlinked into.
+    "include": [
+        "src/**/*",
+        "../vendor/*/*/js/dist-typings/@types/**/*",
+        "../../../vendor/*/*/js/dist-typings/@types/**/*",
+        "@types/**/*"
+    ],
+    "compilerOptions": {
+        "rootDir": "./src",
+        "declarationDir": "./dist-typings",
+        // flarum-tsconfig still sets `moduleResolution: node`, and the `paths`
+        // below need `baseUrl`; TypeScript 6 deprecates both.
+        "ignoreDeprecations": "6.0",
+        "baseUrl": ".",
+        "paths": {
+            "flarum/*": [
+                "../vendor/flarum/core/js/dist-typings/*",
+                "../../../vendor/flarum/core/js/dist-typings/*"
+            ]
+        }
+    }
+}
